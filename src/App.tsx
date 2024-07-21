@@ -25,7 +25,7 @@ function App() {
 
   return (
     <Authenticator>
-      {({ signOut }) => 
+      {({ signOut }) => (
         <main>
           <h1>My todos</h1>
           <button onClick={createTodo}>+ new</button>
@@ -46,8 +46,9 @@ function App() {
           </div>
           <button onClick={signOut}>Sign out</button>
         </main>
-      }
+      )}
     </Authenticator>
   );
+}
 
 export default App;
